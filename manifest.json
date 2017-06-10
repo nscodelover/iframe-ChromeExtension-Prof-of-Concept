@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "ProjectWorldImpact",
+  "description": "ProjectWorldImpact",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "html/main.html"
+  },
+
+  "background": {
+        "scripts": ["js/jquery-2.1.3.min.js", "js/background.js"]
+  },
+
+  "web_accessible_resources": [
+        "html/main.html"
+  ],
+
+  "permissions": [
+      "activeTab",
+      "webRequest",
+      "<all_urls>",
+      "tabs"
+  ]
+}
